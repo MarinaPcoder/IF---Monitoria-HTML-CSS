@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoria - 01/05</title>
+</head>
+<body>
+    <h1><font face="arial" color="orange">Trabalhando com Tabelas</font></h1>
+<hr width="100%" align="left" size="2" color="silver">
+
+<!-- ESTRUTURA BÁSICA -->
+<h2><font face="arial" color="blue">1. Estrutura Básica de uma Tabela</font></h2>
+<p><i>Usando &lt;table&gt;, &lt;caption&gt;, &lt;tr&gt;, &lt;th&gt; e &lt;td&gt;:</i></p>
+
+<table border="1">
+    <caption>Lista de Personagens</caption>
+    <tr>
+        <th>Nome</th>
+        <th>Classe</th>
+        <th>Nível</th>
+    </tr>
+    <tr>
+        <td>Link</td>
+        <td>Espadachim</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Mario</td>
+        <td>Encanador</td>
+        <td>45</td>
+    </tr>
+</table>
+
+<br>
+
+<!-- ALINHAMENTO -->
+<h2><font face="arial" color="blue">2. Alinhamento de Conteúdo</font></h2>
+<p><i>Usando os atributos <code>align</code> e <code>valign</code>:</i></p>
+
+<table border="1" width="100%" height="100">
+    <tr>
+        <td align="left">Esquerda</td>
+        <td align="center">Centro</td>
+        <td align="right">Direita</td>
+    </tr>
+    <tr>
+        <td valign="top">Topo</td>
+        <td valign="middle">Meio</td>
+        <td valign="bottom">Inferior</td>
+    </tr>
+</table>
+
+<br>
+
+<!-- CELLPADDING e CELLSPACING -->
+<h2><font face="arial" color="blue">3. Espaçamento: Cellpadding e Cellspacing</font></h2>
+<p><i><code>cellpadding</code>: espaçamento interno. <code>cellspacing</code>: espaçamento entre as células.</i></p>
+
+<p>Exemplo com <b>cellspacing="10"</b>:</p>
+<table border="1" cellspacing="10">
+    <tr>
+        <td>Aluno</td>
+        <td>Docente</td>
+        <td>Técnico</td>
+    </tr>
+</table>
+
+<p>Exemplo com <b>cellpadding="10"</b>:</p>
+<table border="1" cellpadding="10">
+    <tr>
+        <td>Aluno</td>
+        <td>Docente</td>
+        <td>Técnico</td>
+    </tr>
+</table>
+
+<br>
+
+<!-- ROWSPAN -->
+<h2><font face="arial" color="blue">4. Combinação de Células com ROWSPAN</font></h2>
+<p><i><code>rowspan</code> une células verticalmente.</i></p>
+
+<table border="1">
+    <tr>
+        <td rowspan="3">Status</td>
+        <td>Coluna 2</td>
+        <td>Coluna 3</td>
+    </tr>
+    <tr>
+        <td>Coluna 2</td>
+        <td>Coluna 3</td>
+    </tr>
+    <tr>
+        <td>Coluna 2</td>
+        <td>Coluna 3</td>
+    </tr>
+</table>
+
+<br>
+
+<!-- COLSPAN -->
+<h2><font face="arial" color="blue">5. Combinação de Células com COLSPAN</font></h2>
+<p><i><code>colspan</code> une células horizontalmente.</i></p>
+
+<table border="1">
+    <tr>
+        <td colspan="3">Célula com 3 colunas</td>
+        <td>Coluna 4</td>
+    </tr>
+    <tr>
+        <td>Coluna 1</td>
+        <td>Coluna 2</td>
+        <td>Coluna 3</td>
+        <td>Coluna 4</td>
+    </tr>
+</table>
+
+<br>
+
+<!-- COR DE FUNDO -->
+<h2><font face="arial" color="blue">6. Cor de Fundo das Células</font></h2>
+<p><i>Usando o atributo <code>bgcolor</code> (forma antiga) ou <code>style="background-color"</code> (moderna).</i></p>
+
+<table border="1">
+    <tr>
+        <th bgcolor="#FFD700">Nome</th>
+        <th style="background-color: lightblue;">Classe</th>
+        <th style="background-color: lightgreen;">Nível</th>
+    </tr>
+    <tr>
+        <td style="background-color: #F0F0F0;">Zelda</td>
+        <td>Maga</td>
+        <td>42</td>
+    </tr>
+    <tr>
+        <td style="background-color: #F0F0F0;">Geralt</td>
+        <td>Bruxo</td>
+        <td>60</td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoria - 01/05</title>
+</head>
+<body>
+    <h2>Formulário</h2>
+
+    <!-- 
+        A tag <form> envolve todos os campos do formulário.
+        Ela define a ação e o método para o envio dos dados.
+
+        ⭢action: define para onde os dados serão enviados (página PHP, API, etc.)
+        ⭢method: define como os dados serão enviados
+            ⭢GET: envia os dados pela URL (menos seguro, usado para buscas)
+            ⭢POST: envia no corpo da requisição (mais seguro)
+    -->
+
+    <!-- Campo básico de entrada -->
+    <form action="enviar.php" method="post">
+            <label>Nickname:</label>
+            <input type="text" name="nickname"><br><br>
+
+        <!-- type="password": oculta os caracteres digitados -->
+            <label>Senha:</label>
+            <input type="password" name="senha"><br><br>
+
+        <!-- type="radio": permite uma única seleção dentro do mesmo 'name'-->
+            <p>Estilo de jogo favorito:</p>
+            <input type="radio" name="estilo" value="RPG"> RPG
+            <input type="radio" name="estilo" value="FPS"> FPS
+            <input type="radio" name="estilo" value="Luta"> Luta
+            <br><br>
+
+        <!-- type="checkbox": permite múltiplas seleções
+            name="plataformas[]": colchetes indicam um array de valores
+        -->
+            <p>Plataformas que você joga:</p>
+            <input type="checkbox" name="plataformas[]" value="PC"> PC
+            <input type="checkbox" name="plataformas[]" value="Console"> Console
+            <input type="checkbox" name="plataformas[]" value="Mobile"> Mobile
+            <br><br>
+
+        <!--
+            <select>: cria um menu suspenso
+            <option>: cada opção do menu
+        -->
+            <p>Escolha um jogo:</p>
+            <select name="jogo">
+                <option value="hollow">Hollow Knight</option>
+                <option value="bloodborne">Bloodborne</option>
+                <option value="godofwar">God of War</option>
+                <option value="eldenring">Elden Ring</option>
+                <option value="minecraft">Minecraft</option>
+                <option value="zelda">The Legend of Zelda: Breath of the Wild</option>
+                <option value="undertale">Undertale</option>
+                <option value="reddead">Red Dead Redemption 2</option>
+                <option value="dark">Dark Souls III</option>
+                <option value="cuphead">Cuphead</option>
+                <option value="resident">Resident Evil 4</option>
+                <option value="fortnite">Fortnite</option>
+                <option value="valorant">Valorant</option>
+                <option value="stardew">Stardew Valley</option>
+                <option value="pokemon">Pokémon Emerald</option>
+            </select>
+            <br><br>
+
+        <!-- 
+            <textarea>: área para texto grande
+            rows/cols: definem tamanho visível da caixa
+        -->
+            <p>Experiência</p>
+            <textarea name="experiencia" rows="4" cols="50"></textarea>
+            <br><br>
+
+        <!-- Botões de ação -->
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+
+        <!-- type="submit": envia o formulário -->
+        <!-- type="reset": limpa todos os campos preenchidos -->
+    </form>
+
+</body>
+</html>

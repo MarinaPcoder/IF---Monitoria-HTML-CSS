@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoria - 01/05</title>
+</head>
+<body>
+<h1><font face="arial" color="orange">Inserindo Vídeos e Áudios</font></h1>
+<hr width="100%" align="left" size="2" color="silver">
+
+<!-- VÍDEO LOCAL -->
+<h2><font face="arial" color="blue">Vídeo hospedado localmente</font></h2>
+<p><i>Esse vídeo está salvo na pasta do projeto(./monitoria-01-05/midia/videos/video-exemplo). É carregado diretamente do servidor local.</i></p>
+
+<p><b>Conceitos importantes:</b></p>
+<ul type="square">
+    <li><b>&lt;video&gt;</b>: tag usada para exibir vídeos.</li>
+    <li><b>controls</b>: exibe os controles (play, pause, volume).</li>
+    <li><b>autoplay</b>: o vídeo começa automaticamente.</li>
+    <li><b>loop</b>: o vídeo reinicia automaticamente.</li>
+    <li><b>poster</b>: define a imagem de capa antes do vídeo iniciar.</li>
+</ul>
+
+<video width="560" height="315" poster="./midia/imagens/capa-video.jpeg" controls autoplay loop>
+    <source src="./midia/videos/video-exemplo.mp4" type="video/mp4">
+    <a href="./midia/videos/video-exemplo.mp4">Clique aqui para baixar</a></p>
+</video>
+
+<br><br>
+
+<!-- VÍDEO DO YOUTUBE -->
+<h2><font face="arial" color="blue">Vídeo do YouTube</font></h2>
+<p><i>Vídeos externos como trailers, tutoriais e gameplays podem ser incorporados diretamente com a tag &lt;iframe&gt;.</i></p>
+
+<p><b>Conceitos importantes:</b></p>
+<ul type="square">
+    <li><b>&lt;iframe&gt;</b>: insere conteúdo de outro site dentro da sua página.</li>
+    <li><b>src</b>: URL do vídeo (versão incorporada do YouTube).</li>
+    <li><b>allowfullscreen</b>: permite que o vídeo seja ampliado.</li>
+</ul>
+
+<!-- 
+IMPORTANTE:
+Para inserir vídeos do YouTube corretamente com <iframe>,
+você deve usar o link de incorporação, NÃO o link comum do navegador.
+
+Para obter o link correto:
+1. Acesse o vídeo no YouTube
+2. Clique em "Compartilhar"
+3. Depois em "Incorporar"
+4. Copie o código <iframe> que o YouTube gerar
+
+Se o vídeo estiver com restrições (ex: bloqueado pelo dono, restrição de idade ou privado), ele não funcionará no <iframe>.
+-->
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SS6ABPkfmBE?si=HaDCxnlZq0fnMAOZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8Pc0AEbfnBM?si=ZTwUpgPf68mHlQzU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br><br>
+
+<!-- ÁUDIO -->
+<h2><font face="arial" color="blue">Reproduzindo áudio local</font></h2>
+<p><i>Áudios como trilhas sonoras ou efeitos podem ser adicionados com a tag &lt;audio&gt;.</i></p>
+
+<p><b>Conceitos importantes:</b></p>
+<ul type="square">
+    <li><b>&lt;audio&gt;</b>: usado para inserir áudios.</li>
+    <li><b>controls</b>: exibe os botões de controle (play/pause).</li>
+    <li><b>autoplay</b>: o áudio toca automaticamente.</li>
+    <li><b>loop</b>: o áudio reinicia automaticamente.</li>
+    <li><b>preload</b>: controla o carregamento antecipado do áudio.</li>
+</ul>
+
+<audio preload="metadata" autoplay controls loop>
+    <source src="./midia/audios/audio-exemplo.mp3" type="audio/mpeg">
+   <a href="./midia/audios/audio-exemplo.mp3">Clique aqui para baixar</a></p>
+</audio>
+</body>
+</html>
